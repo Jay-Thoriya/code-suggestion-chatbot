@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
+  
+# **Code Suggestion Chatbot**
 
-First, run the development server:
+This is an AI-powered chatbot designed to analyze code and provide performance improvement suggestions. It features a clean, interactive user interface and integrates modern frameworks and libraries for seamless user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Table of Contents**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. [How to Run the Project](#how-to-run-the-project)  
+2. [Design Choices](#design-choices)  
+3. [Assumptions and Limitations](#assumptions-and-limitations)  
+4. [Screenshots](#screenshots)  
+5. [Technologies Used](#technologies-used)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **How to Run the Project**
 
-To learn more about Next.js, take a look at the following resources:
+### **Prerequisites**
+Ensure you have the following installed:
+- **Node.js** (v16 or above)
+- **Python** (3.8 or above)
+- **pip** (Python package installer)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Backend Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/code-suggestion-chatbot.git
+   cd code-suggestion-chatbot
+2. Navigate to the backend directory (if separate):
+   ```bash
+   cd backend
+3. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the Flask server:
+   ```bash
+   python app.py
+5. The Flask backend will run on http://127.0.0.1:5000
+   
+### **Frontend Setup**
+1. Navigate to the frontend directory (or root if integrated):
+   ```bash
+   cd frontend
+2. Install dependencies:
+   ```bash
+   npm install
+3. Run the development server:
+   ```bash
+   npm run dev
+4. The application will be accessible at http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Design Choices**
 
-## Deploy on Vercel
+1. Frontend Framework:
+    * Used React with Next.js for server-side rendering and optimized performance.
+    * Styled using CSS for clean and responsive design.
+2. Backend Framework:
+    * Chose Flask for simplicity and integration with OpenAI API for processing user input and generating suggestions.
+3. Data Handling:
+    * Suggestions generated dynamically using the OpenAI model based on user input.
+4. User Experience:
+    * Designed a minimalistic interface with a focus on usability.
+    * Added feedback mechanisms, such as loading indicators and error messages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Assumptions and Limitations**
+
+1. Assumptions :
+     * The chatbot assumes the provided input is valid code.
+     * Users are expected to input code snippets in commonly used programming languages.
+2. Limitations :
+     * Performance heavily relies on the OpenAI API response time.
+     * Limited to analyzing and providing suggestions for code snippets under 2,000 characters.
+     * No offline functionality as it depends on an active internet connection.
+
+
+### **Screenshots**
+
+### Home Page
+
+![image](https://github.com/user-attachments/assets/18f19cee-b6aa-4dc8-b165-6db28488e214)
+
+### Code Analysis
+
+![WhatsApp Image 2024-12-07 at 23 12 03_dca41ec5](https://github.com/user-attachments/assets/7c5a2321-dcf4-413c-b464-330432e29088)
+
+![WhatsApp Image 2024-12-07 at 23 14 17_2a07c995](https://github.com/user-attachments/assets/a77afd82-8dac-4f64-9049-8d106b0e29b8)
+
+### Suggestions
+
+![WhatsApp Image 2024-12-07 at 23 30 24_ef3b386b](https://github.com/user-attachments/assets/799daaf5-b050-4b88-9619-8a6156442914)
+
+![WhatsApp Image 2024-12-07 at 23 57 22_3a30effe](https://github.com/user-attachments/assets/a030a23a-1938-442e-a1c2-0fbaffe50778)
+
+![WhatsApp Image 2024-12-07 at 23 57 42_a4bbf9c2](https://github.com/user-attachments/assets/f098b0e3-2d41-4e79-9d72-48ea0b32467b)
+
+
+### **Technologies Used**
+
+## Frontend 
+  * React (v19.0.0)
+  * Next.js (v15.0.4)
+  * TypeScript
+  * Prism.js for syntax highlighting
+## Backend
+  * Flask (Python)
+  * OpenAI API
+## Other Libraries
+  * Lucide-React: Used for icons and UI components.
+  * ESLint: For linting and code quality.
+
