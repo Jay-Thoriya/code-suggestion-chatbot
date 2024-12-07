@@ -87,7 +87,8 @@ Ensure you have the following installed:
 
 ![WhatsApp Image 2024-12-07 at 23 12 03_dca41ec5](https://github.com/user-attachments/assets/7c5a2321-dcf4-413c-b464-330432e29088)
 
-![WhatsApp Image 2024-12-07 at 23 14 17_2a07c995](https://github.com/user-attachments/assets/a77afd82-8dac-4f64-9049-8d106b0e29b8)
+![image](https://github.com/user-attachments/assets/a326f907-b778-4400-a9bc-eabaa52fd683)
+
 
 ### Suggestions
 
